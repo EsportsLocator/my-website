@@ -1,0 +1,51 @@
+/* App.css */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: 'Segoe UI', sans-serif;
+  color: #eaeaea;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.sidebar-glass,
+.main-glass {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+.sidebar-wrapper {
+  width: 360px;
+  height: 100vh;
+  overflow-y: auto;
+  background: #000000;
+  padding-right: 6px;
+}
+
+/* Hide scroll bar (for luxe feel) */
+.sidebar-wrapper::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+/* Hide scrollbar styles */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
